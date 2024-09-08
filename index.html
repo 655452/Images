@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <!-- Example images, replace the src with your own image URLs -->
+        <div class="gallery-item">
+            <img src="./logo.png" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="./woich.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/400" alt="Image 6">
+        </div>
+    </div>
+</body>
+</html>
